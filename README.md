@@ -4,11 +4,17 @@
 
 ### [Notebooks](https://github.com/Booandlean/Fe_Final_Project/tree/master/Notebooks)
 |--- [Data_Prep.ipynb](https://github.com/Booandlean/Fe_Final_Project/blob/master/Notebooks/Data_Prep.ipynb)
+
 _contains code necessary to clean the stanford dataset_
+
 |--- [EDA_n_Vis.ipynb](https://github.com/Booandlean/Fe_Final_Project/blob/master/Notebooks/EDA_n_Vis.ipynb)
+
 _contains visualizations of image distributions for better understanding before modeling_
+
 |--- [Modeling.ipynb](https://github.com/Booandlean/Fe_Final_Project/blob/master/Notebooks/Modeling.ipynb)
+
 _contains FSM and all other models_
+
 ### [.gitignore](https://github.com/Booandlean/Fe_Final_Project/blob/master/.gitignore)
 _tells github to ignore files + file types listed in there_
 ### [README.md](https://github.com/Booandlean/Fe_Final_Project/blob/master/README.md)
