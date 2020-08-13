@@ -16,7 +16,7 @@ _contains visualizations of image distributions for better understanding before 
 _contains FSM and all other models_
 
 ### [.gitignore](https://github.com/Booandlean/Fe_Final_Project/blob/master/.gitignore)
-_tells github to ignore files + file types listed in there_
+_tells github to ignore files + file types listed within_
 ### [README.md](https://github.com/Booandlean/Fe_Final_Project/blob/master/README.md)
 #### _you are here_
 
