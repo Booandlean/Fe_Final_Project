@@ -42,7 +42,7 @@ Step 4: In order to run the first simple model, create a folder called 'FSMimgs'
 
 Step 5: In order to run the rest of the models, you will need to create 3 more folders, 'ExModeling_train', 'ExModeling_test', and 'ExModeling_val'. These upcoming models use pugs, golden retrievers, and pembrokes (AKA corgis)
 
-#### To the grader reading this, I'll write some code that will make tand move files for the user tomorrow, I'm tired and greatly underestimated what I had to get done beyond modeling. 
+#### To the grader reading this, I'll write some code that will make and move files for the user tomorrow, I'm tired and greatly underestimated what I had to get done beyond modeling. 
 
 ## Modeling Results
 
