@@ -15,11 +15,11 @@ _contains visualizations of image distributions for better understanding before 
 
 _contains FSM and all other models other than final notebook_
 
-|--- [Modelig_2.ipynb]()
+|--- [Modelig_2.ipynb](https://github.com/Booandlean/Fe_Final_Project/blob/master/Notebooks/Modeling_2.ipynb)
 
 _contains final model and test data evaluation_
 
-|--- [Final_Notebook]()
+|--- [Final_Notebook](https://github.com/Booandlean/Fe_Final_Project/blob/master/Notebooks/Final_Notebook.ipynb)
 
 _contains final notebook_
 
@@ -27,13 +27,13 @@ _contains final notebook_
 _tells github to ignore files + file types listed within_
 ### [README.md](https://github.com/Booandlean/Fe_Final_Project/blob/master/README.md)
 #### _you are here_
-### [Presentation_Slides]()
+### [Presentation_Slides](https://github.com/Booandlean/Fe_Final_Project/tree/master/Presentation_Slides)
 _contains a .pdf copy of the presentation slides_
-### [src]()
+### [src](https://github.com/Booandlean/Fe_Final_Project/tree/master/src)
 _contains a .py file of the methods used to set up the data for modeling_
-### [Vis_Files]()
+### [Vis_Files](https://github.com/Booandlean/Fe_Final_Project/tree/master/Vis_Files)
 _contains images of visualizations used in the presentation and within the notebooks_
-### [dogs.yml]()
+### [dogs.yml](https://github.com/Booandlean/Fe_Final_Project/blob/master/dogs.yml)
 _the enviorment file_
 ## Project Goal
 
@@ -82,7 +82,7 @@ The final and best performing model was model_1 from the 'Modeling_2' notebook w
 - One improvment that could only make the project better would be to add more dog images beyond those provided by the Stanford dataset. Many dog breeds only had 150 images representing them, and more would have been prefered. 
 
 ## Presentation:
-[You can find a .pdf of the slides here]()
+You can find a .pdf of the slides [here.](https://github.com/Booandlean/Fe_Final_Project/blob/master/Presentation_Slides/Dog_Breed_Identification.pdf)
 
 ## Sources
 
