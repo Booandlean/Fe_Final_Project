@@ -13,13 +13,28 @@ _contains visualizations of image distributions for better understanding before 
 
 |--- [Modeling.ipynb](https://github.com/Booandlean/Fe_Final_Project/blob/master/Notebooks/Modeling.ipynb)
 
-_contains FSM and all other models_
+_contains FSM and all other models other than final notebook_
+
+|--- [Modelig_2.ipynb]()
+
+_contains final model and test data evaluation_
+
+|--- [Final_Notebook]()
+
+_contains final notebook_
 
 ### [.gitignore](https://github.com/Booandlean/Fe_Final_Project/blob/master/.gitignore)
 _tells github to ignore files + file types listed within_
 ### [README.md](https://github.com/Booandlean/Fe_Final_Project/blob/master/README.md)
 #### _you are here_
-
+### [Presentation_Slides]()
+_contains a .pdf copy of the presentation slides_
+### [src]()
+_contains a .py file of the methods used to set up the data for modeling_
+### [Vis_Files]()
+_contains images of visualizations used in the presentation and within the notebooks_
+### [dogs.yml]()
+_the enviorment file_
 ## Project Goal
 
 The objective of this project is to create an image classification model that can take in an image of a dog and correctly identify the breed of said dog. Should this be successful this could be utilized by animal shelters/ pounds to better classify dogs who's breed is not known. 
@@ -36,21 +51,38 @@ Step 1: Make a directory called 'Data' and download the dataset to that folder.
 
 Step 2: Now that the data is in 'Data' there will be a folder within called 'images' and inside of that folder there will be another folder named 'Images'. That folder contains the dataset. Move 'Images' up one level into 'Data', then delete 'images'.
 
-Step 3: Run the code in 'Data_Prep.ipynb', this should produce 3 folders which will contain train, test, and validation data. 
+Step 3: Open 'Data_Prep.ipynb', it contains the methods which will be moving the data around for you from now on. 
 
-Step 4: In order to run the first simple model, create a folder called 'FSMimgs' and copy the Boxer and Bluetick images from the training data, then, run the 3 blocks of code inside the 'First Simple Model' section of 'Modeling.ipynb'
+Step 4: Run The imports cell, then run the 'Data Split' cell of your choice. If you are doing this for the very first time, run 'split_data(.9, .09, .01)' as it will be used for the first couple models.
 
-Step 5: In order to run the rest of the models, you will need to create 3 more folders, 'ExModeling_train', 'ExModeling_test', and 'ExModeling_val'. These upcoming models use pugs, golden retrievers, and pembrokes (AKA corgis)
+Step 5: Run every cell in 'Pathways and Image Directories' to make the necessary file paths and folders.
 
-#### To the grader reading this, I'll write some code that will make and move files for the user tomorrow, I'm tired and greatly underestimated what I had to get done beyond modeling. 
+Step 6: For the 'Methods' section, you only need to run 'model_prep()' at the bottom. All of the other methods are for 'split_data()' which was already imported from 'functions.py'. 
+
+Step 7: The first cell you will see in 'Model Perperation' resets the folders used for modeling and only needs to be run if you are changing the split and/or breeds being used. It is noted in the 'Model Preperation' which breeds are used in which models as headers for the 'model_prep()' cells. 
+
+You should now be ready to run models within the modeling notebooks. To make it easier, here's a list of which splits are used on which models:
+
+#### 90 9 1: 
+First Simple model - model 2
+#### 70 15 15:
+model 3 - model d
+#### 90 5 5:
+All remaining models plus Final Model in the 'Modeling_2' notebook. 
+
 
 ## Modeling Results
 
-At this moment the models are performing poorly. The first few models are clearly overfit with training accuracy reaching the 90's while the validation accuracy does not tend go go above 40. I attempted to counter this initially by removing layers within the CNN's to decrease their complexity in addition to using vertical and horizontal flips within the train and validation data. This was not very successful, with training accuracy going down and validation accuracy remaining mostly the same. I later reintroduced layers of the CNN and converted the images to grayscale as oposed to RGB on the off-chance that the model was too reliant on the color of the dogs, which can very greatly depending on the breed. This led to low accuracy scores, but the validation data had similar scores hovering around 30-40% accuracy. 
+The final and best performing model was model_1 from the 'Modeling_2' notebook with a train accuracy of .850 and a test accuracy of 0.854. Overfitting was a big problem early on in the modeling process so I am glad to see evidence of overcoming it. This certainly isn't enough to handle all 120 breeds, but it is a good start. 
 
-## Next steps
+## Future Improvments
 
-The next plan of attack to counter overfitting is to bring back RGB rather than grayscale and utilize some of the l1 and l2 regularizers within keras. If this goes well I will begin to increase the number of represented breeds in each model. 
+- A limitation of this project was processing power. My models could only get so complex or else they would take too long to run and it was evident that the internal temperatures of my mac book were getting high while running them. 
+- Once processing power is no longer a problem, the next step would be to run more advanced models over more epochs. Most models run in this project only had 10 or 15 epochs. 
+- One improvment that could only make the project better would be to add more dog images beyond those provided by the Stanford dataset. Many dog breeds only had 150 images representing them, and more would have been prefered. 
+
+## Presentation:
+[You can find a .pdf of the slides here]()
 
 ## Sources
 
