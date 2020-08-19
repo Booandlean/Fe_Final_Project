@@ -47,6 +47,24 @@ The dataset can be found [here](https://www.kaggle.com/jessicali9530/stanford-do
 
 As you may have noticed, there is no 'Data' folder in the github repository. This is because the dataset is far too large to be pushed to github. 
 
+Step 0: Before you use jupyer notebook to look at the .ipynb notebooks the environment needs to be set up. Open your terminal and navigate to the folder which contains dogs.yml. Run:
+
+'conda env create -f dogs.yml' 
+
+Then run: 
+
+'conda activate dogs'
+
+to activate the environment. If you do not have pykernel installed, run: 
+
+'pip install --user ipykernel' 
+
+in the terminal. Once this is done, run: 
+
+'python -m ipykernel install --user --name=dogs' 
+
+Upon opening jupyer notebook, go to the 'new' button with the down arrow. You should see 'dogs' under the 'notebook' tab. Once you click 'dogs' the environment will be set up, and you can now run the code within the notebooks. 
+
 Step 1: Make a directory called 'Data' and download the dataset to that folder.
 
 Step 2: Now that the data is in 'Data' there will be a folder within called 'images' and inside of that folder there will be another folder named 'Images'. That folder contains the dataset. Move 'Images' up one level into 'Data', then delete 'images'.
