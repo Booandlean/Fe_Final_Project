@@ -82,7 +82,7 @@ Step 7: The first cell you will see in 'Model Perperation' resets the folders us
 You should now be ready to run models within the modeling notebooks. To make it easier, here's a list of which splits are used on which models:
 
 #### 90 9 1: 
-First Simple model - model 2
+First Simple Model - model 2
 #### 70 15 15:
 model 3 - model d
 #### 90 5 5:
