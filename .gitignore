@@ -6,3 +6,4 @@ Cleaning_n_prepwork.ipynb
 .ipynb_checkpoints
 .ipynb
 .DS_store
+src/__pycache__/functions.cpython-37.pyc
