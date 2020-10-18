@@ -1,6 +1,7 @@
 import shutil
 import os
 import numpy as np
+from PIL import Image
 
 data_path = os.path.join('..', 'Data')
 images_path = os.path.join(data_path, 'Images')
@@ -90,3 +91,26 @@ def model_prep(breed):
     shutil.copytree(test_breed, Ex_test_breed)
     shutil.copytree(train_breed, Ex_train_breed)
     shutil.copytree(val_breed, Ex_val_breed)
+    
+def avg_size(breed):
+#note: this is meant for the training data    
+    breed_path = os.path.join(train_path, breed)
+    
+    width = []
+    height = []
+    
+    for file in os.listdir(breed_path):
+        
+        file_path = os.path.join(breed_path, file)
+        im = Image.open(file_path)
+        w, h = im.size
+        
+        width.append(w)
+        height.append(h)
+    
+    w_avg = sum(width)/len(width)
+    h_avg = sum(height)/len(height)
+    print('# of images:')
+    print(len(width))
+    
+    return w_avg, h_avg
