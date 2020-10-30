@@ -23,6 +23,9 @@ _contains final model and test data evaluation_
 
 _contains final notebook_
 
+### [Notebooks_Phase_2](https://github.com/Booandlean/Fe_Final_Project/tree/master/Notebooks_Phase_2)
+_Another go at this project, contains extra EDA and new models_
+
 ### [.gitignore](https://github.com/Booandlean/Fe_Final_Project/blob/master/.gitignore)
 _tells github to ignore files + file types listed within_
 ### [README.md](https://github.com/Booandlean/Fe_Final_Project/blob/master/README.md)
@@ -35,6 +38,8 @@ _contains a .py file of the methods used to set up the data for modeling_
 _contains images of visualizations used in the presentation and within the notebooks_
 ### [dogs.yml](https://github.com/Booandlean/Fe_Final_Project/blob/master/dogs.yml)
 _the enviorment file_
+### [dogs2.yml](https://github.com/Booandlean/Fe_Final_Project/blob/master/dogs2.yml)
+_the enviorment file for Notebooks_Phase_2_
 ## Project Goal
 
 The objective of this project is to create an image classification model that can take in an image of a dog and correctly identify the breed of said dog. Should this be successful this could be utilized by animal shelters/ pounds to better classify dogs who's breed is not known. 
